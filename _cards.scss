@@ -1,0 +1,138 @@
+.cards {
+    &__header {
+        margin: 96px 0 18px 0;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+
+        h2 {
+            font-size: 30px;
+            line-height: 36px;
+            color: $b-color;  
+        }
+
+        span {
+            font-size: 14px;
+            line-height: 17px;
+            color: #9F9F9F;
+        }
+    }
+
+    &__wrap {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+    }
+
+    &__box {
+        display: flex;
+        flex-wrap: wrap;
+        width: 360px;
+        height: 581px;
+        margin: 30px 0 0 0;
+        background: #F8F8F8;
+        position: relative;
+        overflow: hidden;
+    
+        &:hover {
+            box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.15);
+
+            .cards__box__shadow {
+                opacity: 1;
+            }
+        }
+
+        
+
+        &__shadow {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 420px;
+            background-color: rgba(58, 56, 56, 0.83);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            
+            a {
+                text-decoration: none;
+            }
+
+            .btn {
+                display: flex;
+                background:none;
+                padding: 13px 16px 13px 13px;
+                font-size: 14px;
+                line-height: 17px;
+                color: $text-color;
+                border: 1px solid $text-color;
+                align-items: center;
+                cursor: pointer;
+
+                &__icon {
+                    padding-right: 11px;
+                }
+            }
+        }
+    }
+
+    &__img {
+        height: 420px;
+    }
+    
+    &__text {
+        height: 100%;
+        padding: 24px 28px 20px 16px;
+    }
+    
+    &__name {
+        font-size: 13px;
+        line-height: 16px;
+        text-decoration: none;
+        color: #000000;
+    }
+    
+    &__content {
+        padding: 12px 0 18px 0;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 17px;
+        color: #5D5D5D;
+    } 
+    
+    &__price {
+        font-size: 16px;
+        line-height: 19px;
+        color: $decor-color;
+    }
+    
+
+    a.catalog {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+
+        .cards__button {
+            margin: 48px 0 95px 0;
+            background: none;
+            border: 1px solid $btn-color;
+            font-size: 16px;
+            line-height: 19px;
+            color: #F26376;
+            padding: 14px 38px;
+            cursor: pointer;
+    
+    
+            &:hover {
+                color: $text-color;
+                background: $decor-color;
+            }
+    
+            
+        }
+    }
+    
+}
