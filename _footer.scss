@@ -1,0 +1,122 @@
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
+
+.footer {
+    background: #222224;
+
+    &__subscribe {
+        background: url('./img/footer__bcg.png') no-repeat,
+        url('./img/footer__img.png') no-repeat;
+        /*padding: 86px 327px 156px 208px;*/
+        display: flex;
+        justify-content: center;
+        background-size: 100% auto;
+        height: 448px;
+
+        &__container {
+            max-width: 1140px;
+            display: flex;
+            justify-content: space-between;
+
+            .feedback {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin: 0 327px 0 0;
+                max-width: 360px;
+
+                .avatar {
+                    display: flex;
+                    width: 96px;
+                    height: 96px;
+                }
+
+                blockquote {
+                    font-size: 20px;
+                    line-height: 24px;
+                    color: #222224;
+                    text-align: center;
+                    padding: 30px 0 0 0;
+                    
+                }
+
+            }
+
+            .subsribe__form {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                max-width: 360px;  
+                
+                p {
+                    padding: 10px 0 0 0; 
+                }
+
+                form {
+                    display: flex;
+                    margin: 32px 0 0 0; 
+                }
+
+                .subscribe-field {
+                    border: none;
+                    background: #E1E1E1;
+                    padding: 20px;
+                    border-top-left-radius: 40px;
+                    border-bottom-left-radius: 40px;
+
+                    &::placeholder {
+                        font-size: 14px;
+                        line-height: 17px;
+                        color: #222224;
+                    }
+                }
+
+                .subscribe-btn {
+                    border: none;
+                    background-color: $decor-color;
+                    color: #fff;
+                    padding: 20px;
+                    border-top-right-radius: 40px;
+                    border-bottom-right-radius: 40px;
+                    cursor: pointer;
+                }
+                   
+            }
+        }
+    }
+
+    &__contacts {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .brand {
+            p {
+                font-size: 16px;
+                line-height: 19px;
+                color: #FBFBFB;       
+            }
+        }
+
+        .network {
+            span a {
+                text-align: center;
+                width: 32px;
+                height: 32px;
+                float: left;
+                background: $text-color;
+                margin: 24px 7px 24px 0;
+                padding: 6px;
+                color: #000;
+                font-size: 16px;
+
+                &:hover {
+                    background: $decor-color;
+                    color: $text-color;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+    <title>Cart</title>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container header__wrap">
+            <div class="header__left">
+                <a href="index.html" class="header__logo">
+                    <img src="img/logo.svg" alt="">
+                </a>
+                <img src="img/search.svg" alt="search">
+            </div>
+            <div class="header__right">
+                <nav><img class="header__item" src="img/menu.svg" alt="menu"></nav>
+                <a href="#">
+                    <img class="header__item" src="img/profile.svg" alt="profile">
+                </a>
+                <div class="shop">
+                    <a href="#">
+                        <img class="header__shop" src="img/shop.svg" alt="shop">
+                        <span class="count">5</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <header class="header__menu">
+            <div class="container header__wrap">
+                <div>
+                    <h2>SHOPPING CART</h2>
+                </div>
+
+            </div>
+        </header>
+
+        <div class="container cart">
+            <section class="cart__box">
+                <div class="product">
+                    <img src="./img/man_catalog_3.jpg" alt="cards" class="cards__img">
+                    <div class="characteristic">
+                        <h3>MANGO PEOPLE T-SHIRT</h3>
+                        <ul>
+                            <li>Price: <span>$300</span> </li>
+                            <li>Color: Red </li>
+                            <li>Size: Xl </li>
+                            <li>Quantity: <button>2</button></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="product">
+                    <img src="./img/man_catalog_2.jpg" alt="cards" class="cards__img">
+                    <div class="characteristic">
+                        <h3>MANGO PEOPLE T-SHIRT</h3>
+                        <ul>
+                            <li>Price: <span>$300</span> </li>
+                            <li>Color: Red </li>
+                            <li>Size: Xl </li>
+                            <li>Quantity: <button>2</button></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="btn">
+                    <button>CLEAR SHOPPING CART</button>
+                    <button>CONTINUE SHOPPING</button>
+                </div>
+
+            </section>
+
+            <section class="cart__order">
+                <div class="adress">
+                    <legend>SHIPPING ADRESS</legend>
+                    <input type="text" minlength="2" placeholder="Bangladesh"><br>
+                    <input type="text" minlength="2" placeholder="State"><br>
+                    <input type="text" minlength="2" placeholder="Postcode / Zip"><br>
+                    <button>GET A QUOTE</button>
+                </div>
+
+                <div class="checkout">
+                    <div class="total">
+                        <h4>SUB TOTAL <span>$900</span></h4>
+                        <h3>GRAND TOTAL <span>$900</span></h3>
+                    </div>
+                    <button>PROCEED TO CHECKOUT</button>
+
+                </div>
+
+            </section>
+        </div>
+
+
+    </main>
+
+
+    <footer class="footer">
+        <section class="footer__subscribe">
+
+            <div class="footer__subscribe__container">
+
+                <article class="feedback">
+                    <img src="./img/lady__footer.png" alt="avatar" class="avatar">
+                    <blockquote>
+                        “Vestibulum quis porttitor dui! Quisque viverra nunc mi, <i>a
+                            pulvinar purus condimentum</i>“
+                    </blockquote>
+                </article>
+
+                <article class="subsribe__form">
+                    <h3>SUBSCRIBE</h3>
+                    <p>FOR OUR NEWLETTER AND PROMOTION</p>
+                    </h3>
+                    <form action="#">
+
+                        <input class="subscribe-field" type="email" placeholder="Enter Your Email" required>
+                        <input class="subscribe-btn" type="submit" value="Subscribe">
+                    </form>
+                </article>
+            </div>
+
+        </section>
+
+
+
+        <section class="container footer__contacts">
+            <div class="brand">
+                <p> © 2021 Brand All Rights Reserved.</p>
+            </div>
+            <div class="network">
+                <span>
+                    <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook fa-2x"></i></a>
+                </span>
+                <span>
+                    <a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram fa-2x"></i></a>
+                </span>
+                <span>
+                    <a href="https://www.pinterest.ru/" target="_blank"><i class="fa fa-pinterest fa-2x"></i></a>
+                </span>
+                <span>
+                    <a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter fa-2x"></i></a>
+                </span>
+            </div>
+        </section>
+
+    </footer>
+
+</body>
+
+</html>

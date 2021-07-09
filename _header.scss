@@ -1,0 +1,48 @@
+.header {
+    padding: 18px 0;
+    background-color: $b-color;
+    text-decoration: none;
+
+    &__wrap {
+        display: flex;
+        justify-content: space-between;
+                
+    }
+
+    &__right {
+        display: flex;
+        align-items: center;
+    }
+
+    &__logo {
+        margin-right: 41px;
+    }
+
+    &__item {
+        margin-left: 25px;
+    }
+
+}
+
+
+.shop {
+    margin-left: 42px;
+    position: relative;
+    width: 32px;
+    height: 29px;
+}
+.count {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: -10px;
+    top: -10px;
+    width: 19px;
+    height: 19px;
+    background: $decor-color;
+    border-radius: 50%;
+    font-size: 12px;
+    line-height: 14px;
+    color: $text-color;
+}

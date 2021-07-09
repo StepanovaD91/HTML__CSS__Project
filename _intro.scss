@@ -1,0 +1,38 @@
+.intro {
+    height: 764px;
+    background-color: #F1E4E6;
+    margin: 0 0 65px 0;
+
+    &__wrap {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        background-image: url('./img/man.png');
+        background-repeat: no-repeat;
+        background-position: -208px bottom;
+    }
+
+    &__text {
+        max-width: 377px;
+        padding-left: 16px;
+        border-left: 12px solid $decor-color;
+        color: $b-color;
+        font-style: normal;
+        font-weight: 900;
+    }
+
+    h1 {
+        font-size: 48px;
+        line-height: 58px;
+    }
+    
+    h2 {
+        font-size: 30px;
+    }
+
+    .decor {
+        color: $decor-color;
+    }
+
+}
