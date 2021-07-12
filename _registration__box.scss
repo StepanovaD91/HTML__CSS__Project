@@ -1,0 +1,126 @@
+.registration__box {
+    margin-right: 128px;
+    max-width: 360px;
+    
+
+    form {
+        display: flex;
+        flex-direction: column;
+        animation: form 3s 0s;
+        
+        
+
+        @keyframes form {
+            0% {
+                transform: translateY(-500px);
+                transition: all 2.6s cubic-bezier(0,1.24,0,1.58);
+            }
+        }
+
+        
+        .name {
+            legend {
+                font-weight: 300;
+                font-size: 16px;
+                line-height: 19px;
+                margin-bottom: 20px;
+            }
+
+            input {
+                border: 1px solid #A4A4A4;
+                padding: 12px 0 15px 17px;
+                width: 360px;
+               
+
+                &:not(last-child) {
+                    margin-bottom: 21px;
+                }
+            }
+
+             
+        }
+
+        .gender {
+            font-weight: 300;
+            font-size: 11px;
+            line-height: 13px;
+            display: flex;
+            flex-direction: row;
+
+            label:not(last-child) {
+                margin-right: 20px;
+            }
+            
+            input {
+                margin-right: 10px;
+
+            }
+            
+            
+        }
+
+        .login {
+            legend {
+                font-weight: 300;
+                font-size: 16px;
+                line-height: 19px;
+                margin-bottom: 20px;
+                margin-top: 33px;
+            }
+
+            input {
+                border: 1px solid #A4A4A4;
+                padding: 12px 0 15px 17px;
+                width: 360px;
+               
+
+                &:not(last-child) {
+                    margin-bottom: 21px;
+                }
+            }
+
+            p {
+                font-weight: 300;
+                font-size: 13px;
+                line-height: 16px;
+                color: #B1B1B1;  
+            }
+
+             
+        }
+
+        button {
+            background: $decor-color;
+            font-size: 14px;
+            line-height: 17px;
+            color: $text-color;
+            border:none;
+            padding: 16px 0;
+            max-width: 167px;
+            margin-top: 39px;
+            text-align: center;
+            cursor: pointer;
+            
+
+            &:after {
+                content: '';
+                width: 17px;
+                height: 10px;
+                display: inline-block;
+                background: url(./img/vector_btn.svg);
+                margin-left: 20px;
+            }
+
+            &:hover {
+                transform: scale(1.25);
+                transition: all 1.5s ease-out;
+            }
+
+            
+
+        }
+
+    }
+    
+
+}
