@@ -1,0 +1,301 @@
+.loyalty {
+    display: flex;
+    flex-direction: column;
+    max-width: 652px;
+    position: relative;
+    
+
+    h3 {
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 29px;
+        margin-bottom: 22px;
+        position: relative;
+          
+
+        &:hover {
+            transform: rotate(180deg);
+            transition: all 1s ease-out;
+        }
+    }
+
+
+    p {
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 29px;
+        margin-bottom: 21px;
+        position: relative;
+            
+    }
+
+    ul {
+        
+        li {
+            list-style-type: none;
+            font-weight: 300;
+            font-size: 24px;
+            line-height: 29px;
+            animation: li 3s 0s;
+ 
+            &:before {
+                content: '';
+                background: url(./img/li.svg);
+                width: 20px;
+                height: 16px;
+                display:inline-block;
+                margin-right: 23px;
+               
+            }
+
+            &:not(:last-child) {
+                margin-bottom: 16px;
+            }
+
+            @keyframes li {
+                0% {
+                    transform: translateX(500px);
+                    transition: all 2.6s cubic-bezier(0,1.24,0,1.58);
+                }
+            }
+
+        }
+    }
+
+    .ball_1,
+    .ball_2,
+    .ball_3,
+    .ball_4,
+    .ball_5,
+    .ball_6,
+    .ball_7,
+    .ball_8,
+    .ball_9,
+    .ball_10 {
+        position: absolute;
+        border-radius: 50%/50%;
+        background: green;
+        width: 30px;
+        height: 30px;
+    }
+
+    .ball {
+
+        &_1 {
+            top: 5%;
+            left: 3%;
+            animation: ball_1 4s 3s linear infinite;
+            background: -webkit-radial-gradient(#DDA0DD, #AFEEEE);
+        }
+
+        &_2 {
+            top: 73%;
+            left: 90%;
+            animation: ball_2 2s linear infinite;
+            background: -webkit-radial-gradient(#B0C4DE, #FFF8DC);
+        }
+
+        &_3 {
+            top: 85%;
+            left: 15%;
+            animation: ball_3 5s 1s linear infinite;
+            background: -webkit-radial-gradient(#FFFFF0, #DDA0DD);
+        }
+
+        &_4 {
+            top: 40%;
+            left: 35%;
+            animation: ball_4 6s 2s linear infinite;
+            background: -webkit-radial-gradient(#ADD8E6, #778899);
+        }
+        &_5 {
+            top: 79%;
+            left: 47%;
+            animation: ball_5 2.5s 1s linear infinite;
+            background: -webkit-radial-gradient(#DDA0DD, #778899);
+        }
+        &_6 {
+            top: 11%;
+            left: 76%;
+            animation: ball_6 7s linear infinite;
+            background: -webkit-radial-gradient(#DDA0DD, #FFFF00);
+        }
+        &_7 {
+            top: 50%;
+            left: 70%;
+            animation: ball_7 2s 1s linear infinite;
+            background: -webkit-radial-gradient(#F0E68C, #FFA07A);
+        }
+
+        &_8 {
+            top: 72%;
+            left: 80%;
+            animation: ball_8 4s linear infinite;
+            background: -webkit-radial-gradient(#F0E68C, #AFEEEE);
+        }
+
+        &_9 {
+            top: 30%;
+            left: 90%;
+            animation: ball_9 3s 2s linear infinite;
+            background: -webkit-radial-gradient(#DB7093, #AFEEEE);
+        }
+
+        &_10 {
+            top: 7%;
+            left: 98%;
+            animation: ball_10 6s linear infinite;
+            background: -webkit-radial-gradient(#AFEEEE, #FF7F50);
+        } 
+        @keyframes ball_2 {
+            0% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0;
+            }
+        }
+        
+        @keyframes ball_5 {
+            0% {
+                opacity: 1;
+            }
+            100%{
+                opacity: 0;
+            }
+        }
+            
+        @keyframes ball_7 {
+            0% {
+                opacity: 1;
+            }
+            100%{
+                opacity: 0;
+            }
+        }
+        
+        @keyframes ball_9 {
+            0% {
+                opacity: 1;
+            }
+            100%{
+                opacity: 0;
+            }
+        }
+        
+        
+        @keyframes ball_1 {
+            0% {
+                width: 10px;
+                height: 10px;
+            }
+            7% {
+                width: 60px;
+                height: 60px;
+                opacity: 1;
+                transform: translate(150px, 150px);
+            }
+            8% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 0;
+            }
+        }
+        
+        @keyframes ball_3 {
+            0% {
+                width: 100px;
+                height: 100px;
+            }
+            12% {
+                width: 10px;
+                height: 10px;
+                opacity: 1;
+                transform: translate(150px, -200px);
+            }
+            13% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 0;
+            }
+        }
+        
+        @keyframes ball_4 {
+            0% {
+                width: 100px;
+                height: 100px;
+            }
+            10% {
+                width: 25px;
+                height: 25px;
+                opacity: 1;
+                transform: translate(200px, 270px);
+            }
+            11% {
+                opacity: 0;
+                }
+            100% {
+                opacity: 0;
+                }
+        }
+        
+        @keyframes ball_6 {
+            0% {
+                width: 90px;
+                height: 90px;
+            }
+            10% {
+                height: 40px;
+                width: 40px;
+                opacity: 1;
+                transform: translate(-350px, 300px);
+            }
+            11% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 0;
+                }
+        }
+        
+        @keyframes ball_8 {
+            0% {
+                width: 60px;
+                height: 60px;
+            }
+            10% {
+                width: 15px;
+                height: 15px;
+                opacity: 1;
+                transform: translate(-130px, -150px);
+            }
+            11% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 0;
+            }
+        }
+        
+        @keyframes ball_10 {
+            0% {
+                width: 35px;
+                height: 35px;
+            }
+            10% {
+                width: 40px;
+                width: 40px;
+                opacity: 1;
+                transform: translate(-600px, 200px);
+            }
+            11% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 0;
+            }
+        }
+    }    
+}

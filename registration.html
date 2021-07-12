@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
-    <title>Cart</title>
+    <title>Registration</title>
 </head>
 
 <body>
@@ -38,71 +38,74 @@
     <main>
         <header class="header__menu">
             <div class="container header__wrap">
-                <h2>SHOPPING CART</h2>
+                <h2>REGISTRATION</h2>
             </div>
         </header>
 
-        <div class="container cart">
-            <section class="cart__box">
-                <div class="product">
-                    <img src="./img/man_catalog_3.jpg" alt="cards" class="cards__img">
-                    <div class="characteristic">
-                        <h3>MANGO PEOPLE T-SHIRT</h3>
-                        <ul>
-                            <li>Price: <span>$300</span> </li>
-                            <li>Color: Red </li>
-                            <li>Size: Xl </li>
-                            <li>Quantity: <button>2</button></li>
-                        </ul>
+        <div class="container registration">
+            <section class="registration__box">
+                <form action="#">
+                    <div class="name">
+                        <legend>Your Name</legend>
+                        <input type="text" minlength="2" placeholder="First Name"><br>
+                        <input type="text" minlength="2" placeholder="Last Name">
                     </div>
-                </div>
 
-                <div class="product">
-                    <img src="./img/man_catalog_2.jpg" alt="cards" class="cards__img">
-                    <div class="characteristic">
-                        <h3>MANGO PEOPLE T-SHIRT</h3>
-                        <ul>
-                            <li>Price: <span>$300</span> </li>
-                            <li>Color: Red </li>
-                            <li>Size: Xl </li>
-                            <li>Quantity: <button>2</button></li>
-                        </ul>
+
+                    <div class="gender">
+                        <label><input type="radio" name="gender" checked> Male</label>
+                        <label><input type="radio" name="gender"> Female</label>
                     </div>
-                </div>
 
-                <div class="btn">
-                    <button>CLEAR SHOPPING CART</button>
-                    <button>CONTINUE SHOPPING</button>
-                </div>
+                    <div class="login">
+                        <legend>Login details</legend>
+                        <input type="email" placeholder="Email" required><br>
+                        <input type="password" minlength="8" placeholder="Password" required>
+
+                        <p>Please use 8 or more characters, with at least 1 number and a mixture of uppercase and
+                            lowercase
+                            letters</p>
+                    </div>
+
+                    <button>JOIN NOW</button>
+
+
+
+                </form>
+
 
             </section>
 
-            <section class="cart__order">
-                <div class="adress">
-                    <form action="#">
-                        <legend>SHIPPING ADRESS</legend>
-                        <input type="text" minlength="2" placeholder="Bangladesh" required><br>
-                        <input type="text" minlength="2" placeholder="State" required><br>
-                        <input type="text" minlength="2" placeholder="Postcode / Zip" required><br>
-                        <button>GET A QUOTE</button>
-                    </form>
-                </div>
+            <section class="loyalty">
 
-                <div class="checkout">
-                    <div class="total">
-                        <h4>SUB TOTAL <span>$900</span></h4>
-                        <h3>GRAND TOTAL <span>$900</span></h3>
-                    </div>
-                    <button>PROCEED TO CHECKOUT</button>
+                <h3>LOYALTY HAS ITS PERKS</h3>
+                <p>Get in on the loyalty program where you can earn points and unlock serious perks. Starting with
+                    these
+                    as soon as you join:</p>
+                <ul>
+                    <li>15% off welcome offer</li>
+                    <li>Free shipping, returns and exchanges on all orders</li>
+                    <li>$10 off a purchase on your birthday</li>
+                    <li>Early access to products</li>
+                    <li>Exclusive offers & rewards</li>
+                </ul>
+                <div class="ball_1"></div>
+                <div class="ball_2"></div>
+                <div class="ball_3"></div>
+                <div class="ball_4"></div>
+                <div class="ball_5"></div>
+                <div class="ball_6"></div>
+                <div class="ball_7"></div>
+                <div class="ball_8"></div>
+                <div class="ball_9"></div>
+                <div class="ball_10"></div>
 
-                </div>
 
             </section>
+
         </div>
 
-
     </main>
-
 
     <footer class="footer">
         <section class="footer__subscribe">
